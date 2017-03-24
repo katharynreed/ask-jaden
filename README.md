@@ -77,7 +77,7 @@ ember s
   * **Spec 7**: Users can edit or delete answers and edit questions (but not delete, but questions are eternal)
 
 3. Integration
-  * `index` route which takes all `question`s as a model and lists them
+  * `index` route which takes all `question`(s) as a model and lists them
     * `question-tile` component to display each individual question on `index` template
   * `new-question` route for question creation
     * `create-question` component consisting of `question` creation form which passes `params` up to `new-question`
