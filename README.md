@@ -58,10 +58,6 @@ ember s
   ```console
   bower install bootstrap --save
   ```
-  * Install **moment** and save as a dependency in bower.json for easier timestamps
-  ```console
-  bower install moment --save
-  ```
   * Install **emberfire** and save as a dependency in package.json for firebase database interface
   ```console
   ember install emberfire
@@ -74,7 +70,7 @@ ember s
   * **Spec 4**: Users can click a question on the homepage in order to view full detail and all answers attached to the question
   * **Spec 5**: Users can respond to a question with an answer consisting of an answer, and authorship information
   * **Spec 6**: Answers will be saved in the firebase database with a one-to-many relationship to the question they match
-  * **Spec 7**: Users can edit or delete answers and edit questions (but not delete, but questions are eternal)
+  * **Spec 7**: Users can edit or delete answers and edit questions (but not delete, because Questions Are Eternal)
 
 3. Integration
   * `index` route which takes all `question`(s) as a model and lists them
@@ -85,7 +81,7 @@ ember s
     * `update-question` component which can be accessed to update question information that passes `params` up to `question` route
     * `new-answer` component consisting of a form on the `question` route which allows users to answer the question and save to the question
     * `answer-tile` component to display each answer
-    * `edit-answer` component which can be toggled with `answer-tile` to edit answers
+    * `updateAnswer` component which can be toggled with `answer-tile` to edit answers
     * `deleteAnswer` action on delete button for each `answer-tile`
   * `application` template to add non-dynamic content to all pages (e.g. header, footer, etc.)
 

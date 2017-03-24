@@ -1,0 +1,24 @@
+
+{{#if answerForm}}
+  <h1 class="header">Ask A Question</h1>
+  <div class="new-question-form">
+    <div class="form-group">
+      <label for="author">Author:</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="title">Answer Summary:</label>
+      {{input value=title id="title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="question">Full Answer:</label>
+      {{input value=question id="question"}}
+    </div>
+
+    <button {{action 'createQuestion'}}>Answer Now</button>
+  </div>
+{{else}}
+  <button class="answer-btn" {{action 'answerForm'}}>Answer Jaden</button>
+{{/if}}

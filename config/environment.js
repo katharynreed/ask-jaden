@@ -18,10 +18,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: 'YOUR-API-KEY-HERE',
-      authDomain: 'YOUR-FIREBASE-APP.firebaseapp.com',
-      databaseURL: 'https://YOUR-FIREBASE-APP.firebaseio.com',
-      storageBucket: 'YOUR-FIREBASE-APP.appspot.com'
+      apiKey: "AIzaSyAxDIzrjen2y5jHLwJe3BiOVzwrAsO1I6E",
+      authDomain: "message-board-62a48.firebaseapp.com",
+      databaseURL: "https://message-board-62a48.firebaseio.com",
+      storageBucket: "message-board-62a48.appspot.com",
     },
 
     APP: {
