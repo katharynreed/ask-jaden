@@ -1,1 +1,11 @@
-{{yield}}
+<h3 class="answer-title">{{answer.title}}</h2>
+<h5 class="answer-author">{{answer.author}}</h5>
+<hr>
+
+{{#if answer.image}}
+  <img src={{answer.image}}>
+{{/if}}
+
+<p>
+  {{answer.answer}}
+</p>

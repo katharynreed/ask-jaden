@@ -2,6 +2,10 @@
 <h5 class="question-author">{{question.author}}</h5>
 <hr>
 
+{{#if question.image}}
+  <img src={{question.image}}>
+{{/if}}
+
 <p>
   {{question.question}}
 </p>
