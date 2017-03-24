@@ -1,2 +1,4 @@
-<h2 class="question-title">{{question.title}}</h2>
-<h5 class="question-author">{{question.author}}</h5>
+{{#link-to 'question' question.id}}
+  <h2 class="question-title">{{question.title}}</h2>
+  <h5 class="question-author">{{question.author}}</h5>
+{{/link-to}}
