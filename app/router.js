@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('post');
   this.route('question');
   this.route('new-question');
+  this.route('update-quetsion');
 });
 
 export default Router;

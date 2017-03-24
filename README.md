@@ -78,14 +78,12 @@ ember s
 
 3. Integration
   * `index` route which takes all `question`(s) as a model and lists them
-    * `question-tile` component to display each individual question on `index` template
+    * `question-tile` component to display questions on `index` template
   * `new-question` route for question creation
-    * `create-question` component consisting of `question` creation form which passes `params` up to `new-question`
+    * `create-question` component that includes `question` creation form which passes `params` up to `new-question`
   * `question` route with a path to individual questions by id, found by clicking a question on the `index` template
-    * `question-detail` component to display all details of a question
-    * `edit-question` component which can be accessed to update question information that passes `params` up to `question` route
-    * `deleteQuestion` action on delete button on `question` route
-    * `add-answer` component consisting of a form on the `question` route which allows users to answer the question and save it as related to that question
+    * `update-question` component which can be accessed to update question information that passes `params` up to `question` route
+    * `new-answer` component consisting of a form on the `question` route which allows users to answer the question and save to the question
     * `answer-tile` component to display each answer
     * `edit-answer` component which can be toggled with `answer-tile` to edit answers
     * `deleteAnswer` action on delete button for each `answer-tile`
