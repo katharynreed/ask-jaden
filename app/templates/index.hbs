@@ -1,0 +1,7 @@
+{{#if model}}
+  {{#each model as |question|}}
+    {{question-title question=question}}
+  {{/each}}
+{{else}}
+  <h3 id="no-questions">There Are No Questions That Need Knowing Or Not Knowing, Come Again When They Need More From Us.</h3>
+{{/if}}
