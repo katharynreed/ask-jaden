@@ -2,20 +2,20 @@
   <div class="update-question-form">
     <div class="form-group">
       <label for="author">Author:</label>
-      {{input value=author id="author"}}
+      {{input value=author id="author" placeholder=question.author}}
     </div>
 
     <div class="form-group">
       <label for="title">Question Summary:</label>
-      {{input value=title id="title"}}
+      {{input value=title id="title" placeholder=question.title}}
     </div>
 
     <div class="form-group">
-      <label for="question">Full Question:</label>
-      {{input value=question id="question"}}
+      <label for="questionText">Full Question:</label>
+      {{input value=questionText id="questionText" placeholder=question.questionText}}
     </div>
 
-    <button {{action 'updateQuestion'}}>Save Changes</button>
+    <button {{action 'updateQuestion' question}}>Save Changes</button>
   </div>
 {{else}}
   <button class="update-btn btn" {{action 'updateQuestionForm'}}>Update Question</button>

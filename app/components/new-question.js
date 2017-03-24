@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   actions: {
     createQuestion() {
       var params = {
-        question: this.get('question'),
+        questionText: this.get('questionText'),
         author: this.get('author'),
         title: this.get('title'),
       };
