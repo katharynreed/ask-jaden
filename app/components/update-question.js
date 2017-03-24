@@ -4,10 +4,10 @@ export default Ember.Component.extend({
   updateQuestionForm: false,
   actions: {
     updateQuestionForm() {
-      this.set('updateRentalForm', true);
+      this.set('updateQuestionForm', true);
     },
 
-    update(question) {
+    updateQuestion(question) {
       var params = {
         question: this.get('question'),
         author: this.get('author'),

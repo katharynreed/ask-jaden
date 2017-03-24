@@ -1,5 +1,5 @@
 <h2 class="question-title">{{question.title}}</h2>
-<h5 class="question-author">{{question.author}}</h5>
+<h5 class="question-author">by: {{question.author}}</h5>
 <hr>
 
 {{#if question.image}}
@@ -9,5 +9,3 @@
 <p>
   {{question.question}}
 </p>
-
-{{update-question question=question update="update"}}

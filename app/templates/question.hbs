@@ -1,8 +1,9 @@
-{{outlet}}
+{{question-tile question=model}}
 
-{{update-question question=question update="update"}}
+{{update-question question=model updateQuestion="updateQuestion"}}
 
-{{new-answer question=model createAnswer="createAnswer"}}
+{{new-answer createAnswer="createAnswer"}}
+
 {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}
 {{/each}}

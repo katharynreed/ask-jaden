@@ -1,6 +1,5 @@
 
 {{#if answerForm}}
-  <h1 class="header">Ask A Question</h1>
   <div class="new-question-form">
     <div class="form-group">
       <label for="author">Author:</label>
@@ -17,7 +16,7 @@
       {{input value=question id="question"}}
     </div>
 
-    <button {{action 'createQuestion'}}>Answer Now</button>
+    <button {{action 'createAnswer'}}>Answer Now</button>
   </div>
 {{else}}
   <button class="answer-btn" {{action 'answerForm'}}>Answer Jaden</button>

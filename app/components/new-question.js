@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       var params = {
         question: this.get('question'),
         author: this.get('author'),
-        image: this.get('image'),
+        title: this.get('title'),
       };
       this.sendAction('createQuestion', params);
     }
