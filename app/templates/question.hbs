@@ -2,7 +2,7 @@
 
 {{update-question question=model updateQuestion="updateQuestion"}}
 
-{{new-answer createAnswer="createAnswer"}}
+{{new-answer createAnswer="createAnswer" question=model}}
 
 {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}

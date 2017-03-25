@@ -10,9 +10,11 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         author: this.get('author'),
-        answer: this.get('answer'),
+        answerText: this.get('answerText'),
         question: this.get('question'),
       };
+      this.set('answerForm', false);
+      debugger;
       this.sendAction('createAnswer', params);
     }
   }
