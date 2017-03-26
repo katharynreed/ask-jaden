@@ -66,11 +66,11 @@ ember s
 2. Specs
   * **Spec 1**: Users can navigate between main pages using links in navbar
   * **Spec 2**: Users can submit a question that contains a title, body content, authorship information. The question will be saved to the firebase database.
-  * **Spec 3**: All questions can be viewed on the homepage with title, author, and first line visable
+  * **Spec 3**: All questions can be viewed on the homepage with title and author
   * **Spec 4**: Users can click a question on the homepage in order to view full detail and all answers attached to the question
   * **Spec 5**: Users can respond to a question with an answer consisting of an answer, and authorship information
   * **Spec 6**: Answers will be saved in the firebase database with a one-to-many relationship to the question they match
-  * **Spec 7**: Users can edit or delete answers and edit questions (but not delete, because Questions Are Eternal)
+  * **Spec 7**: Users can edit questions (but not delete, because Questions Are Eternal)
 
 3. Integration
   * `index` route which takes all `question`(s) as a model and lists them

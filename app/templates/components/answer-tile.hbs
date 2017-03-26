@@ -1,11 +1,13 @@
-<h3 class="model-title">{{answer.title}}</h3>
-<h5 class="model-author">{{answer.author}}</h5>
-<hr>
+<ul class="list-unstyled">
+  <li class="media">
+    <img class="d-flex mr-3" src="http://assets.fratmusic.com.s3-us-west-2.amazonaws.com/cover/90s.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1 answer-title mt-0">{{answer.title}}</h5>
 
-{{#if answer.image}}
-  <img src={{answer.image}}>
-{{/if}}
-
-<p>
-  {{answer.answerText}}
-</p>
+      <p>
+        {{answer.answerText}}
+      </p>
+      <h6 class="answer-author">posted by: {{answer.author}}</h6>
+    </div>
+  </li>
+</ul>
