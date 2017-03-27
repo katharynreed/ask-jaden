@@ -14,7 +14,6 @@ export default Ember.Component.extend({
         question: this.get('question'),
       };
       this.set('answerForm', false);
-      debugger;
       this.sendAction('createAnswer', params);
     }
   }

@@ -15,7 +15,7 @@
       {{input value=questionText id="questionText" placeholder=question.questionText}}
     </div>
 
-    <button {{action 'updateQuestion' question}}>Save Changes</button>
+    <button class="btn" {{action 'updateQuestion' question}}>Save Changes</button>
   </div>
 {{else}}
   <button class="update-btn btn" {{action 'updateQuestionForm'}}>Update Question</button>

@@ -1,4 +1,5 @@
 <h1 class="header">Ask A Question</h1>
+<hr>
 <div class="new-question-form">
   <div class="form-group">
     <label for="author">Author:</label>
@@ -15,5 +16,5 @@
     {{input value=questionText id="questionText"}}
   </div>
 
-  <button {{action 'createQuestion'}}>Ask Universe</button>
+  <button class="btn" {{action 'createQuestion'}}>Ask Universe</button>
 </div>

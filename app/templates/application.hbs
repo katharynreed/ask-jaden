@@ -1,11 +1,14 @@
-<div class="container-fluid">
-  <div class="navbar">
-    <ul class="nav-ul">
-      <li class="nav-li"><a href="/">Home</a></li>
-      <li class="nav-li">{{#link-to "new-question"}}Ask a Question{{/link-to}}</li>
-    </ul>
-  </div>
+<div class="nav-back">
+  <p>{{#link-to "index"}}Home{{/link-to}} | {{#link-to "new-question"}}Ask a Question{{/link-to}}</p>
 </div>
+
+<div class="header">
+  <h1>Ask Jaden</h1>
+  <h4>Where Jaden asks, and Will Smith answers.</h4>
+</div>
+<hr class=header-hr>
+<br>
+
 <div class="container">
   {{outlet}}
 </div>

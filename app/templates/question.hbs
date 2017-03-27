@@ -1,9 +1,13 @@
-{{question-tile question=model}}
+<div class="panel panel-default">
+  <div class="content">
+    {{question-tile question=model}}
+  </div>
+  <div class="button-for-question">
+    {{update-question question=model updateQuestion="updateQuestion"}}
 
-{{update-question question=model updateQuestion="updateQuestion"}}
-
-{{new-answer createAnswer="createAnswer" question=model}}
-
-{{#each model.answers as |answer|}}
+    {{new-answer createAnswer="createAnswer" question=model}}
+  </div>
+</div>
+  {{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}
-{{/each}}
+  {{/each}}
